@@ -22,9 +22,17 @@
     <color name="qiscus_accent">#FF5722</color>
     <color name="qiscus_primary_text">#212121</color>
     <color name="qiscus_secondary_text">#727272</color>
+    <color name="qiscus_soft_secondary_text">#777</color>
     <color name="qiscus_white">#FFFFFF</color>
     <color name="qiscus_divider">#B6B6B6</color>
     <color name="qiscus_light_grey">#D8D8D8</color>
     <color name="qiscus_red">#d32f2f</color>
     <color name="qiscus_dark_white">#f6f6f6</color>
+
+    <color name="qiscus_soft_grey_select_top">#e0dddd</color>
+    <color name="qiscus_soft_grey_split">#d0d0d0</color>
+    <color name="qiscus_soft_grey">#777</color>
+    <color name="qiscus_soft_grey_choose">#aaa</color>
+    <color name="qiscus_link_preview_buble">#17000000</color>
+
 </resources>
