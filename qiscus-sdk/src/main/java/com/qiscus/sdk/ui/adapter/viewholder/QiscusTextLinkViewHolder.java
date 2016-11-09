@@ -19,7 +19,10 @@ package com.qiscus.sdk.ui.adapter.viewholder;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.qiscus.sdk.R;
@@ -34,7 +37,7 @@ import com.qiscus.sdk.ui.adapter.OnLongItemClickListener;
  * GitHub     : https://github.com/zetbaitsu
  * LinkedIn   : https://id.linkedin.com/in/zetbaitsu
  */
-public class QiscusTextLinkViewHolder extends QiscusBaseTextMessageViewHolder {
+public class QiscusTextLinkViewHolder extends QiscusBaseTextLinkMessageViewHolder {
     public QiscusTextLinkViewHolder(View itemView, OnItemClickListener itemClickListener, OnLongItemClickListener longItemClickListener) {
         super(itemView, itemClickListener, longItemClickListener);
     }
@@ -43,6 +46,60 @@ public class QiscusTextLinkViewHolder extends QiscusBaseTextMessageViewHolder {
     @Override
     protected TextView getMessageTextView(View itemView) {
         return (TextView) itemView.findViewById(R.id.contents);
+    }
+
+    @Nullable
+    @Override
+    protected TextView getTitleTextView(View itemView) {
+        return (TextView) itemView.findViewById(R.id.title);
+    }
+
+    @Nullable
+    @Override
+    protected TextView getUrlTextView(View itemView) {
+        return (TextView) itemView.findViewById(R.id.url);
+    }
+
+    @Nullable
+    @Override
+    protected TextView getDescriptionTextView(View itemView) {
+        return (TextView) itemView.findViewById(R.id.description);
+    }
+
+    @Nullable
+    @Override
+    protected LinearLayout getInfoWrap(View itemView) {
+        return (LinearLayout) itemView.findViewById(R.id.info_wrap);
+    }
+
+    @Nullable
+    @Override
+    protected LinearLayout getTitleWrap(View itemView) {
+        return (LinearLayout) itemView.findViewById(R.id.title_wrap);
+    }
+
+    @Nullable
+    @Override
+    protected ImageView getImageSet(View itemView) {
+        return (ImageView) itemView.findViewById(R.id.image_post_set);
+    }
+
+    @Nullable
+    @Override
+    protected ViewGroup getDropPreview(View itemView) {
+        return (ViewGroup) itemView.findViewById(R.id.drop_preview);
+    }
+
+    @Nullable
+    @Override
+    protected ProgressBar getProgressBarLoading(View itemView) {
+        return (ProgressBar) itemView.findViewById(R.id.progress_bar);
+    }
+
+    @Nullable
+    @Override
+    protected LinearLayout getLinLinkPreview(View itemView) {
+        return (LinearLayout) itemView.findViewById(R.id.linLinkPreview);
     }
 
     @Nullable
