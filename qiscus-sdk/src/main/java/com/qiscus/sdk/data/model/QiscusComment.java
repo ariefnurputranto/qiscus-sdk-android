@@ -264,7 +264,10 @@ public class QiscusComment implements Parcelable {
 
     public Type getType() {
         if (!isAttachment()) {
-            return Type.TEXT;
+            if(message.contains("https://")||message.contains("http://")){
+                return Type.TEXTLINK;
+            }else
+                return Type.TEXT;
         } else if (isImage()) {
             return Type.IMAGE;
         } else if (isAudio()) {
@@ -447,7 +450,7 @@ public class QiscusComment implements Parcelable {
     }
 
     public enum Type {
-        TEXT, IMAGE, FILE, AUDIO
+        TEXT, IMAGE, FILE, AUDIO, TEXTLINK
     }
 
     public interface ProgressListener {
