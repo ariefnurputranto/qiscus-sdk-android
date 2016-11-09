@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
             loginButton.setText("Login");
         } else {
             showLoading();
-            Qiscus.setUser("zetra25@gmail.com", "12345678")
-                    .withUsername("Zetra")
+            Qiscus.setUser("sdk.arief@gmail.com", "arief011192")
+                    .withUsername("Arief")
                     .save()
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
@@ -69,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void openChat(View view) {
         showLoading();
-        Qiscus.buildChatWith("rya.meyvriska24@gmail.com")
-                .withTitle("Rya Meyvriska")
+        Qiscus.buildChatWith("sdk.arief2@gmail.com")
+                .withTitle("Arief")
                 .build(this)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buildRoom() {
-        Qiscus.buildChatRoomWith("rya.meyvriska1@gmail.com")
+        Qiscus.buildChatRoomWith("sdk.arief2@gmail.com")
                 .build()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

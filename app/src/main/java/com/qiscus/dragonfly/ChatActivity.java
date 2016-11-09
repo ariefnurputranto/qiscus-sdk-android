@@ -56,7 +56,7 @@ public class ChatActivity extends AppCompatActivity {
 
     private void openQiscusFragment() {
         showLoading();
-        Qiscus.buildChatFragmentWith("rya.meyvriska24@gmail.com")
+        Qiscus.buildChatFragmentWith("sdk.arief2@gmail.com")
                 .build()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -74,7 +74,7 @@ public class ChatActivity extends AppCompatActivity {
 
     private void openSimpleCustom() {
         showLoading();
-        Qiscus.buildChatRoomWith("rya.meyvriska24@gmail.com")
+        Qiscus.buildChatRoomWith("sdk.arief2@gmail.com")
                 .build()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
